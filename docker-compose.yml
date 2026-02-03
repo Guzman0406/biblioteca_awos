@@ -1,0 +1,43 @@
+services:
+  biblioteca_db:
+    image: postgres:15-alpine
+    container_name: biblioteca_db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db:/docker-entrypoint-initdb.d
+    networks:
+      - library_net
+
+  biblioteca_app:
+    image: node:22-bullseye
+    container_name: biblioteca_app
+    working_dir: /app
+    environment:
+      DB_USER: biblioteca_admin
+      DB_PASSWORD: ${DB_APP_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      DB_HOST: biblioteca_db
+      DB_PORT: 5432
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install && npm run dev -- -p 3001"
+    depends_on:
+      - biblioteca_db
+    networks:
+      - library_net
+
+volumes:
+  postgres_data:
+
+
+networks:
+  library_net:
