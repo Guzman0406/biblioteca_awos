@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/reports/layout,_N_T_/reports/inventario/layout,_N_T_/reports/inventario/page,_N_T_/reports/inventario"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/reports/inventario/__PAGE__",
+    "/reports/inventario",
+    "/reports",
+    "/_index",
+    "/_head"
+  ]
+}

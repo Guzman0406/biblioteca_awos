@@ -1,0 +1,62 @@
+[00:00:06.955] Server  LOG     ✓ Ready in 6.2s
+[00:00:10.033] Server  LOG     ○ Compiling / ...
+[00:00:17.027] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.409] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:<Fragment>, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/src/layou...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="es"
+-                         suppresshydrationwarning="true"
+-                         data-qb-installed="true"
+                        >
+                          <body
+-                           __processed_cb66f84c-d825-4afb-a769-73430a8e0e5c__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="/src/page.tsx">
+                                <SegmentTrieNode>
+                                <PaginaInicio>
+                                  <div
+                                    className="container"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <header>
+                                    <div
+                                      className="stats-grid"
+-                                     bis_skin_checked="1"
+                                    >
+                              ...
+                  ...
+

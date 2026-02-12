@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const spaceMono = Space_Mono({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-space-mono",
-});
-
 export const metadata: Metadata = {
-  title: "Sistema de Gestión",
-  description: "Panel de control administrativo",
+  title: "Sistema de Biblioteca",
+  description: "Sistema de gestión de biblioteca",
 };
 
 export default function RootLayout({
@@ -19,10 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${spaceMono.variable} antialiased`}
-      >
+    <html lang="es">
+      <body>
         {children}
       </body>
     </html>
