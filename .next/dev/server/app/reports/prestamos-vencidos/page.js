@@ -1,6 +1,6 @@
 var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/reports/prestamos-vencidos/page.js")
 R.c("server/chunks/ssr/[root-of-the-server]__59e2f69b._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__fc02df25._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__e1bbb121._.js")
 R.c("server/chunks/ssr/node_modules_e2d1c5df._.js")
 R.c("server/chunks/ssr/[externals]__e8a2741f._.js")
 R.c("server/chunks/ssr/src_app_5b2047f8._.js")

@@ -17,12 +17,12 @@ export default async function PaginaPrestamosVencidos({
       <div className="header">
         <Link href="/" className="back-link">← Volver al Dashboard</Link>
         <h1>Préstamos Vencidos</h1>
-        <p>Monitoreo de morosidad y cálculo de multas</p>
+        <p>Cálculo de multas</p>
       </div>
 
 
       <div className="kpi-single">
-        <h3>Deuda Total Potencial</h3>
+        <h3>Deuda</h3>
         <p className="kpi-value">${deudaTotal.toFixed(2)}</p>
         <p className="kpi-subtitle">{total} préstamos vencidos</p>
       </div>

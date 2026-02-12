@@ -22,7 +22,7 @@ export default async function PaginaInventario() {
             <div className="header">
                 <Link href="/" className="back-link">← Volver al Dashboard</Link>
                 <h1>Salud del Inventario</h1>
-                <p>Estado actual del acervo y rotación de libros</p>
+                <p>Estado actual</p>
             </div>
 
 
@@ -36,14 +36,14 @@ export default async function PaginaInventario() {
                     <p className="kpi-value">{totalCirculacion}</p>
                 </div>
                 <div className="kpi-card">
-                    <h3>Ocupación Global</h3>
+                    <h3>Ocupación</h3>
                     <p className="kpi-value">{ocupacionGlobal}%</p>
                 </div>
             </div>
 
 
             <div className="table-container">
-                <h2>Desglose por Categoría</h2>
+                <h2> Categorías</h2>
                 <table>
                     <thead>
                         <tr>

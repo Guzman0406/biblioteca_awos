@@ -1,4 +1,8 @@
 {
   "/page": "app/page.js",
-  "/reports/multas/page": "app/reports/multas/page.js"
+  "/reports/inventario/page": "app/reports/inventario/page.js",
+  "/reports/libros-populares/page": "app/reports/libros-populares/page.js",
+  "/reports/multas/page": "app/reports/multas/page.js",
+  "/reports/prestamos-vencidos/page": "app/reports/prestamos-vencidos/page.js",
+  "/reports/socios/page": "app/reports/socios/page.js"
 }

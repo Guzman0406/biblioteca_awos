@@ -17,7 +17,7 @@ export default async function PaginaSocios({
       <div className="header">
         <Link href="/" className="back-link">← Volver al Dashboard</Link>
         <h1>Actividad de Socios</h1>
-        <p>Análisis de comportamiento y riesgo de socios</p>
+        <p>Análisis de comportamiento</p>
       </div>
 
 
@@ -25,7 +25,7 @@ export default async function PaginaSocios({
         <input
           type="text"
           name="q"
-          placeholder="Buscar por nombre o tipo de membresía..."
+          placeholder="Buscar por nombre o membresía..."
           defaultValue={params.q || ''}
         />
         <button type="submit" className="btn">Buscar</button>
